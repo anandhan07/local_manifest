@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Remotes -->
+    <remote name="aospa-vince"
+            fetch="https://github.com/aospa-vince/" />
+
+    <remote name="me-lab"
+            fetch="https://gitlab.com/anandhan07/" />
+
+ <!-- Remove Projects -->
+ <remove-project name="AOSPA/android_vendor_aospa" />
+
+ <!-- Trees -->
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="uvite" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="aospa-vince" revision="uvite" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="aospa-vince" revision="uvite" clone-depth="1" />
+
+ <!-- HALs -->
+ <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-audio-89xx-R" />
+ <project path="hardware/qcom/media" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-media-89xx-R" />
+ <project path="hardware/qcom/display" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-display-89xx-S" />
+
+ <!-- Clang -->
+ <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
+
+ <!-- vendor_aospa -->
+ <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-vince" revision="uvite" >
+   <linkfile src="build.sh" dest="rom-build.sh" />
+ </project>
+
+</manifest>
