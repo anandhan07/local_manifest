@@ -10,9 +10,15 @@
             fetch="https://github.com/GhostMaster69-dev/"
             clone-depth="1" />
 
+ <!-- Remove Projects -->
+ <remove-project name="device_qcom_sepolicy-legacy-um" />
+
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="spark-13.0" />
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="13.0" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" />
+
+ <!-- Sepolicy -->
+ <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="me-hub" revision="spark-13.0" />
 
 </manifest>
