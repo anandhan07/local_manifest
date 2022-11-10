@@ -6,6 +6,10 @@
             fetch="https://github.com/anandhan07/"
             clone-depth="1" />
 
+    <remote name="me-lab"
+            fetch="https://gitlab.com/anandhan07/"
+            clone-depth="1" />
+
     <remote name="GhostMaster69-dev"
             fetch="https://github.com/GhostMaster69-dev/"
             clone-depth="1" />
@@ -14,5 +18,8 @@
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" />
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="13.0" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" />
+
+ <!-- Clang [TEMP] -->
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-14.0.6" />
 
 </manifest>
