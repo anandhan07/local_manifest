@@ -19,7 +19,8 @@
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="13.0" />
  <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" />
 
- <!-- Clang [TEMP] -->
+ <!-- Clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="me-lab" revision="clang-15.0.3" />
  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-14.0.6" />
 
  <!-- Packages -->
