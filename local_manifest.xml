@@ -14,6 +14,10 @@
             fetch="https://github.com/GhostMaster69-dev/"
             clone-depth="1" />
 
+    <remote name="iusmac"
+            fetch="https://github.com/iusmac"
+            clone-depth="1" />        
+
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" />
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="13.0" />
@@ -25,5 +29,8 @@
 
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" />
+
+ <!-- RevampedFMRadio -->
+ <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
 </manifest>
