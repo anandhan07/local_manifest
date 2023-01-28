@@ -14,6 +14,10 @@
             fetch="https://github.com/GhostMaster69-dev/"
             clone-depth="1" />
 
+    <remote name="iusmac"
+            fetch="https://github.com/iusmac"
+            clone-depth="1" />
+
  <!-- Remove Projects -->
  <remove-project name="device_qcom_sepolicy-legacy-um" />
 
@@ -31,5 +35,8 @@
  <!-- Clang -->
  <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="me-lab" revision="clang-15.0.3" />
  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-14.0.6" />
+
+ <!-- RevampedFMRadio -->
+ <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
 </manifest>
