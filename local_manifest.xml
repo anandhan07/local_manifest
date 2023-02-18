@@ -33,7 +33,7 @@
  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="me-hub" revision="spark-13.0" />
 
  <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/clang-r468909b" name="aosp-clang" remote="me-lab" revision="clang-15.0.3" />
+ <project path="prebuilts/clang/host/linux-x86/clang-master" name="aosp-clang" remote="me-lab" revision="master" />
  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-14.0.6" />
 
  <!-- RevampedFMRadio -->
