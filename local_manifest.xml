@@ -6,6 +6,14 @@
             fetch="https://github.com/anandhan07/"
             clone-depth="1" />
 
+    <remote name="me-lab"
+            fetch="https://gitlab.com/anandhan07/"
+            clone-depth="1" />
+
+    <remote name="iusmac"
+            fetch="https://github.com/iusmac"
+            clone-depth="1" />
+
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
 
@@ -23,5 +31,11 @@
  <project path="vendor/aospa" name="android_vendor_aospa" remote="me-hub" revision="topaz" clone-depth="1" >
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
+
+ <!-- Packages -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" />
+
+ <!-- RevampedFMRadio -->
+ <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
 </manifest>
