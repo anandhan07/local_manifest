@@ -32,6 +32,9 @@
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
 
+ <!-- Clang -->
+ <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="master" />
+
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" />
 
