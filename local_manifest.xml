@@ -16,6 +16,7 @@
 
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
+ <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="AOSPA-topaz" />
@@ -31,6 +32,9 @@
  <project path="vendor/aospa" name="android_vendor_aospa" remote="me-hub" revision="topaz" clone-depth="1" >
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
+
+ <!-- Power -->
+ <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="me-hub" revision="topaz" />
 
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="master" />
