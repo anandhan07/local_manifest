@@ -10,26 +10,30 @@
             fetch="https://gitlab.com/anandhan07/"
             clone-depth="1" />
 
+    <remote name="aospa-vince"
+            fetch="https://github.com/aospa-vince/"
+            clone-depth="1" />
+
     <remote name="iusmac"
             fetch="https://github.com/iusmac"
             clone-depth="1" />
 
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
- <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
  <remove-project name="AOSPA/android_frameworks_base" />
  <remove-project name="AOSPA/android_build" />
  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="AOSPA-topaz" />
- <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="AOSPA-topaz" />
- <project path="kernel/xiaomi/vince" name="kernel_xiaomi_vince" remote="me-hub" revision="AOSPA" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="topaz" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="aospa-vince" revision="topaz" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="aospa-vince" revision="topaz" />
 
  <!-- HALs -->
- <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" remote="me-hub" revision="LA.UM.9.6.2.r1-msm8953_64-AOSPA" />
- <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="me-hub" revision="LA.UM.9.6.2.r1-msm8953_64-AOSPA" />
- <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="me-hub" revision="LA.UM.10.6.2.r1-msm8953_64-AOSPA" />
+ <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" remote="aospa-vince" revision="topaz-8953" />
+ <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="aospa-vince" revision="topaz-8953" />
+ <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="aospa-vince" revision="topaz-8953" />
+ <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="aospa-vince" revision="topaz" />
 
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="master" />
@@ -41,13 +45,11 @@
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
  <!-- AOSPA -->
- <project path="frameworks/base" name="android_frameworks_base" remote="me-hub" revision="topaz" />
- <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="me-hub" revision="topaz" />
- <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="me-hub" revision="topaz" />
- <project path="vendor/aospa" name="android_vendor_aospa" remote="me-hub" revision="topaz" >
+ <project path="frameworks/base" name="android_frameworks_base" remote="aospa-vince" revision="topaz" />
+ <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-vince" revision="topaz" >
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
- <project path="build/make" name="android_build" remote="me-hub" revision="topaz" >
+ <project path="build/make" name="android_build" remote="aospa-vince" revision="topaz" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
