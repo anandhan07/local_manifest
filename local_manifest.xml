@@ -16,7 +16,11 @@
 
     <remote name="iusmac"
             fetch="https://github.com/iusmac"
-            clone-depth="1" />        
+            clone-depth="1" />
+
+    <remote name="GrapheneOS"
+            fetch="https://github.com/GrapheneOS/"
+            clone-depth="1" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" />
@@ -32,5 +36,8 @@
 
  <!-- RevampedFMRadio -->
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
+
+ <!-- GrapheneOS Camera -->
+ <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13"/>
 
 </manifest>
