@@ -1,43 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Remotes -->
+    <!-- Remotes -->
     <remote name="me-hub"
-            fetch="https://github.com/anandhan07/"
-            clone-depth="1" />
+            fetch="https://github.com/anandhan07/" />
 
     <remote name="me-lab"
-            fetch="https://gitlab.com/anandhan07/"
-            clone-depth="1" />
+            fetch="https://gitlab.com/anandhan07/" />
 
     <remote name="GhostMaster69-dev"
-            fetch="https://github.com/GhostMaster69-dev/"
-            clone-depth="1" />
+            fetch="https://github.com/GhostMaster69-dev/" />
 
     <remote name="iusmac"
-            fetch="https://github.com/iusmac"
-            clone-depth="1" />
+            fetch="https://github.com/iusmac/" />
 
     <remote name="GrapheneOS"
-            fetch="https://github.com/GrapheneOS/"
-            clone-depth="1" />
+            fetch="https://github.com/GrapheneOS/" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" />
- <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" />
- <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" clone-depth="1" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="pixelexperience-13.0" clone-depth="1" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" clone-depth="1" />
 
  <!-- Clang -->
- <project path="prebuilts/clang/host/linux-x86/clang-master" name="aosp-clang" remote="me-lab" revision="master" />
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-r450784d" />
+ <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="14" clone-depth="1" />
 
  <!-- Packages -->
- <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" />
-
- <!-- RevampedFMRadio -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
- <!-- GrapheneOS Camera -->
- <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13"/>
+ <!-- External -->
+ <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13" />
 
 </manifest>
