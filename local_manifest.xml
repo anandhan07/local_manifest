@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
- <!-- Remotes -->
+    <!-- Remotes -->
     <remote name="me-hub"
-            fetch="https://github.com/anandhan07/"
-            clone-depth="1" />
+            fetch="https://github.com/anandhan07/" />
 
     <remote name="me-lab"
-            fetch="https://gitlab.com/anandhan07/"
-            clone-depth="1" />
+            fetch="https://gitlab.com/anandhan07/" />
 
     <remote name="aospa-vince"
-            fetch="https://github.com/aospa-vince/"
-            clone-depth="1" />
+            fetch="https://github.com/aospa-vince/" />
 
     <remote name="iusmac"
-            fetch="https://github.com/iusmac"
-            clone-depth="1" />
+            fetch="https://github.com/iusmac/" />
 
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
@@ -26,32 +22,34 @@
  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
 
  <!-- Trees -->
- <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="topaz" />
- <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="aospa-vince" revision="topaz" />
- <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="aospa-vince" revision="topaz" />
+ <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="topaz" clone-depth="1" />
+ <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="aospa-vince" revision="topaz" clone-depth="1" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="aospa-vince" revision="topaz" clone-depth="1" />
 
  <!-- HALs -->
- <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" remote="aospa-vince" revision="topaz-8953" />
- <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="aospa-vince" revision="topaz-8953" />
- <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="aospa-vince" revision="topaz-8953" />
+ <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom_audio" remote="aospa-vince" revision="topaz-89xx-R" />
+ <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="aospa-vince" revision="topaz-89xx-R" />
+ <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="aospa-vince" revision="topaz-89xx-S" />
  <project path="hardware/qcom/wlan" name="AOSPA/android_hardware_qcom_wlan" remote="aospa" revision="topaz-taro-backup" />
  <project path="vendor/qcom/opensource/usb" name="AOSPA/android_vendor_qcom-opensource_usb" remote="aospa" revision="topaz-taro-backup" />
 
  <!-- Clang -->
- <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="master" />
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="clang-r450784d" />
+ <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
+ <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="14" clone-depth="1" />
 
  <!-- Packages -->
- <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" />
-
- <!-- RevampedFMRadio -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
 
- <!-- AOSPA -->
+ <!-- Framework -->
  <project path="frameworks/base" name="android_frameworks_base" remote="aospa-vince" revision="topaz" />
+
+ <!-- vendor_aospa -->
  <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-vince" revision="topaz" >
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
+
+ <!-- build -->
  <project path="build/make" name="android_build" remote="aospa-vince" revision="topaz" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
