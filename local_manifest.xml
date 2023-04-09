@@ -14,6 +14,9 @@
     <remote name="iusmac"
             fetch="https://github.com/iusmac/" />
 
+    <remote name="GrapheneOS"
+            fetch="https://github.com/GrapheneOS/" />
+
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
  <remove-project name="AOSPA/android_frameworks_base" />
@@ -36,6 +39,9 @@
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="14" clone-depth="1" />
+
+ <!-- GrapheneOS Camera -->
+ <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13" />
 
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
