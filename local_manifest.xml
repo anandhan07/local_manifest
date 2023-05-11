@@ -30,7 +30,6 @@
 
  <!-- Clang -->
  <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
- <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="aosp-clang" remote="me-lab" revision="14" clone-depth="1" />
 
  <!-- Framework -->
  <project path="frameworks/base" name="pixel_frameworks_base" remote="me-hub" revision="thirteen-plus" />
