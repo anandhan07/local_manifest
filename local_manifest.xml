@@ -8,19 +8,16 @@
     <remote name="me-lab"
             fetch="https://gitlab.com/anandhan07/" />
 
-    <remote name="GhostMaster69-dev"
-            fetch="https://github.com/GhostMaster69-dev/" />
+    <remote name="aospa-vince"
+            fetch="https://github.com/aospa-vince/" />
 
     <remote name="iusmac"
             fetch="https://github.com/iusmac/" />
 
- <!-- Remove Projects -->
- <remove-project name="device_qcom_sepolicy-legacy-um" />
-
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="spark-13.0" clone-depth="1" />
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="spark-13.0" clone-depth="1" />
- <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="GhostMaster69-dev" revision="master" clone-depth="1" />
+ <project path="kernel/xiaomi/vince" name="android_kernel_xiaomi_vince" remote="aospa-vince" revision="topaz" clone-depth="1" />
 
  <!-- Clang -->
  <project path="prebuilts/clang/host/linux-x86/clang-aosp" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
@@ -28,8 +25,5 @@
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
-
- <!-- Sepolicy -->
- <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy-legacy-um" remote="me-hub" revision="spark-13.0" />
 
 </manifest>
