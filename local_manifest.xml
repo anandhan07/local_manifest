@@ -14,6 +14,9 @@
     <remote name="iusmac"
             fetch="https://github.com/iusmac/" />
 
+    <remote name="GrapheneOS"
+            fetch="https://github.com/GrapheneOS/" />
+
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="me-hub" revision="spark-13.0" clone-depth="1" />
  <project path="vendor/xiaomi/vince" name="android_vendor_xiaomi_vince" remote="me-hub" revision="spark-13.0" clone-depth="1" />
@@ -25,5 +28,8 @@
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
+
+ <!-- External -->
+ <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13" />
 
 </manifest>
