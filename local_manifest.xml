@@ -32,4 +32,12 @@
  <!-- External -->
  <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="13" />
 
+ <!-- TEMP -->
+ <remove-project name="frameworks_base" />
+ <remove-project name="LineageOS/android_frameworks_opt_telephony" />
+ <remove-project name="packages_apps_Fireworks" />
+ <project path="frameworks/base" name="spark_frameworks_base" remote="me-hub" revision="pyro-next" />
+ <project path="frameworks/opt/telephony" name="spark_frameworks_opt_telephony" remote="me-hub" revision="pyro-next" />
+ <project path="packages/apps/Fireworks" name="spark_packages_apps_Fireworks" remote="me-hub" revision="pyro-next" />
+
 </manifest>
