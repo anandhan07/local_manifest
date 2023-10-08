@@ -19,11 +19,7 @@
 
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
- <remove-project name="AOSPA/android_frameworks_base" />
- <remove-project name="AOSPA/android_frameworks_av" />
  <remove-project name="AOSPA/android_frameworks_opt_telephony" />
- <remove-project name="AOSPA/android_packages_apps_Settings" />
- <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
  <remove-project name="AOSPA/android_build" />
  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
@@ -49,12 +45,8 @@
  <!-- Packages -->
  <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="master" clone-depth="1" />
  <project path="packages/apps/RevampedFMRadio" name="RevampedFMRadio" remote="iusmac" revision="qcom" />
- <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="aospa-vince" revision="topaz" />
- <project path="packages/apps/Paranoid/SystemUI" name="android_packages_apps_Paranoid_SystemUI" remote="aospa-vince" revision="topaz" />
 
  <!-- Framework -->
- <project path="frameworks/base" name="android_frameworks_base" remote="aospa-vince" revision="topaz" />
- <project path="frameworks/av" name="android_frameworks_av" remote="aospa-vince" revision="topaz" />
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="aospa-vince" revision="topaz" />
 
  <!-- vendor_aospa -->
