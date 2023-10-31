@@ -8,6 +8,9 @@
     <remote name="me-lab"
             fetch="https://gitlab.com/anandhan07/" />
 
+    <remote name="GrapheneOS"
+            fetch="https://github.com/GrapheneOS/" />
+
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
  <remove-project name="AOSPA/android_build" />
@@ -25,6 +28,9 @@
 
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
+
+ <!-- GrapheneOS Camera -->
+ <project path="external/Camera" name="platform_external_Camera" remote="GrapheneOS" revision="14" />
 
  <!-- build -->
  <project path="build/make" name="android_build" remote="aospa-vince" revision="uvite" >
