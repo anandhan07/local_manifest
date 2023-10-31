@@ -10,6 +10,8 @@
 
  <!-- Remove Projects -->
  <remove-project name="AOSPA/android_vendor_aospa" />
+ <remove-project name="AOSPA/android_build" />
+ <remove-project name="AOSPA/android_frameworks_opt_telephony" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="uvite" />
@@ -24,9 +26,22 @@
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
 
+ <!-- build -->
+ <project path="build/make" name="android_build" remote="aospa-vince" revision="uvite" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+
  <!-- vendor_aospa -->
  <project path="vendor/aospa" name="android_vendor_aospa" remote="aospa-vince" revision="uvite" >
    <linkfile src="build.sh" dest="rom-build.sh" />
  </project>
+
+ <!-- Framework -->
+ <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="aospa-vince" revision="uvite" />
 
 </manifest>
