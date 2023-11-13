@@ -15,6 +15,8 @@
  <remove-project name="AOSPA/android_vendor_aospa" />
  <remove-project name="AOSPA/android_build" />
  <remove-project name="AOSPA/android_frameworks_opt_telephony" />
+ <remove-project name="AOSPA/android_hardware_qcom_wlan" />
+ <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="uvite" />
@@ -25,6 +27,8 @@
  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-audio-89xx-R" />
  <project path="hardware/qcom/media" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-media-89xx-R" />
  <project path="hardware/qcom/display" name="android_hardware_qcom-caf" remote="aospa-vince" revision="uvite-display-89xx-S" />
+ <project path="hardware/qcom/wlan" name="AOSPA/android_hardware_qcom_wlan" remote="aospa" revision="topaz-taro-backup" />
+ <project path="vendor/qcom/opensource/usb" name="AOSPA/android_vendor_qcom-opensource_usb" remote="aospa" revision="topaz-taro-backup" />
 
  <!-- Clang -->
  <project path="prebuilts/clang-standalone" name="aosp-clang" remote="me-lab" revision="17" clone-depth="1" />
