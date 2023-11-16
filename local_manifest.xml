@@ -17,6 +17,7 @@
  <remove-project name="AOSPA/android_frameworks_opt_telephony" />
  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+ <remove-project name="AOSPA/android_system_libhidl" />
 
  <!-- Trees -->
  <project path="device/xiaomi/vince" name="android_device_xiaomi_vince" remote="aospa-vince" revision="uvite" />
@@ -53,5 +54,8 @@
 
  <!-- Framework -->
  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="aospa-vince" revision="uvite" />
+
+ <!-- System -->
+ <project path="system/libhidl" name="android_system_libhidl" remote="aospa-vince" revision="uvite" />
 
 </manifest>
