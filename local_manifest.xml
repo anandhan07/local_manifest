@@ -58,4 +58,7 @@
  <!-- System -->
  <project path="system/libhidl" name="android_system_libhidl" remote="aospa-vince" revision="uvite" />
 
+ <!-- Packages -->
+ <project path="packages/apps/ViPER4AndroidFX" name="packages_apps_ViPER4AndroidFX" remote="me-lab" revision="14" clone-depth="1" />
+
 </manifest>
